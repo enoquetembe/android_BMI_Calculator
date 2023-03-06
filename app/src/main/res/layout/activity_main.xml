@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232129"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtw_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/weight_tv"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxt_whight"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="78dp"
+        android:background="#3E3B47"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/etxt_height"
+        app:layout_constraintStart_toStartOf="@+id/etxt_height"
+        app:layout_constraintTop_toBottomOf="@+id/txtw_reesult" />
+
+    <TextView
+        android:id="@+id/txtv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/heigt_tv"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtw_weight" />
+
+    <EditText
+        android:id="@+id/etxt_height"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:background="#3E3B47"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtv_height"
+        app:layout_constraintStart_toEndOf="@+id/txtv_height" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:background="#FF9000"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="@+id/etxt_height"
+        app:layout_constraintStart_toStartOf="@+id/etxt_height"
+        app:layout_constraintTop_toBottomOf="@+id/etxt_height" />
+
+    <TextView
+        android:id="@+id/txtw_reesult"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="160dp"
+        android:textColor="#FF9000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
